@@ -1,9 +1,17 @@
 public class Item{
-    public int amount;
-    public String name;
+    private int amount;
+    private String name;
 
-    public void set_amount(int val){};
-    public void get_amount(){};
-    public void set_name(String title){};
-    public void get_name(){};
+    public void set_amount(int val){
+        this.amout = val;
+    }
+    public void get_amount(){
+        return amount;
+    }
+    public void set_name(String title){
+        this.name = title;
+    }
+    public void get_name(){
+        return name;
+    }
 }
