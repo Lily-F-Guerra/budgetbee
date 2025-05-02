@@ -1,9 +1,9 @@
 public class Item{
-    private int amount;
+    /*private int amount;
     private String name;
 
     public void set_amount(int val){
-        this.amout = val;
+        this.amount = val;
     }
     public void get_amount(){
         return amount;
@@ -13,5 +13,5 @@ public class Item{
     }
     public void get_name(){
         return name;
-    }
+    }*/
 }
