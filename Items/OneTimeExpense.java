@@ -1,0 +1,3 @@
+class OneTimeExpense extends Item{
+
+}

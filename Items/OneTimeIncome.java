@@ -1,0 +1,3 @@
+class OneTimeIncome extends Item{
+
+}
