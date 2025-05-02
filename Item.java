@@ -1,6 +1,6 @@
 public class Item{
-    private int amount;
-    private String name;
+    public int amount;
+    public String name;
 
     public void set_amount(int val){};
     public void get_amount(){};
