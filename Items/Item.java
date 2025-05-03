@@ -1,11 +1,19 @@
 abstract class Item{
     int value;
     String name;
+    int freq;
 
     //constructor
     //use polymorphism
+    public Item(String n, int v, int f){
+        name = n;
+        value = v;
+        freq = f;
+    }
 
-    //add getter and setter methods?
-    //void set_value(int v);
+    public Item(String n, int v){
+        name = n;
+        value = v;
+    }
 
 }

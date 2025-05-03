@@ -4,8 +4,9 @@ import java.util.ArrayList;
 public class Budget {
     private ArrayList<Item> items = new ArrayList<>();
 
-    public void addItem(Item item) {
-        items.add(item);
+    public void createItem(){
+        //get name, value, freq, and type
+        //use polymorphism
     }
 
     public double total() {
@@ -19,4 +20,9 @@ public class Budget {
         }
         return total;
     }
+
+    public void display(){
+        
+    }
+    
 }
