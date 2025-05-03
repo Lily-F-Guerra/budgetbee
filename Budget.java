@@ -1,23 +1,22 @@
-import java.util.Scanner;
-import item.*;
+import Items.*;
+import java.util.ArrayList;
 
-public class Budget{
-    Scanner input = new Scanner();
+public class Budget {
+    private ArrayList<Item> items = new ArrayList<>();
 
-    //how do we store items in the Budget? Array? Idk how to do this in Java.
-
-    public void createItem(){
-
+    public void addItem(Item item) {
+        items.add(item);
     }
 
-    public double total(){
-        int total = 0.0;
-        //loop through each item in the Budget
-        //if it is an expense, subtract
-        //if it is an income, add
-        //number may be positive or negative
+    public double total() {
+        double total = 0.0;
+        for (Item item : items) {
+            if (item instanceof OneTimeIncome || item instanceof RecurringIncome) {
+                total += item.getValue();
+            } else {
+                total -= item.getValue(); // treat expenses as subtraction
+            }
+        }
         return total;
     }
-
-    
 }
