@@ -1,8 +1,10 @@
 import Items.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Budget {
     private ArrayList<Item> items = new ArrayList<>();
+    private Scanner input = new Scanner(); 
 
     public void createItem(){
         //get name, value, freq, and type
