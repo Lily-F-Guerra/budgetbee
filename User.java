@@ -1,10 +1,10 @@
-public class User{
+public class User {
     private String name;
     private String password;
-    private bool login = true;
+    private boolean login = true;
 
     public void set_name(String n){
-        if (login == true && n != ""){
+        if (login == true && !n.isEmpty()){
             name = n;
         }
     }
@@ -14,18 +14,16 @@ public class User{
     }
 
     public void set_pass(String pass){
-        if (login == true && pass != ""){
+        if (login == true && !pass.isEmpty()){
             password = pass;
         }
     }
-    //No getter method for password. It needs to be a secret!
 
     public void login(String n, String pass){
-        if (n == name && pass == password){
+        if (n.equals(name) && pass.equals(password)){
             login = true;
+        } else {
+            login = false;
         }
-        else {login = false;}
     }
-
-
 }
