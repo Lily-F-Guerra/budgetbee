@@ -2,7 +2,7 @@ public class User {
     private String name;
     private String password;
     private boolean login = true;
-
+    //example of encapsulation
     public void set_name(String n){
         if (login == true && !n.isEmpty()){
             name = n;
